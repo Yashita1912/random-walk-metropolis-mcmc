@@ -82,13 +82,14 @@ Using
 
 the generated histogram and kernel density estimate closely match the analytical Laplace density.
 
-The Monte Carlo estimates were:
+The Monte Carlo estimates were approximately :
 
 | Statistic | Estimate | True Value |
 |----------|---------:|-----------:|
 | Mean | -0.028 | 0 |
 | Standard Deviation | 1.407 | √2 ≈ 1.414 |
 
+Note : The value differs slightly everytime the notebook is rerun, but are apporximately the same.
 
 
 ---
