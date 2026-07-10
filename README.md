@@ -1,38 +1,32 @@
-# Metropolis-Hastings Algorithm for Sampling from a Laplace Distribution
+# Random Walk Metropolis–Hastings: MCMC Sampling & Convergence Diagnostics
+
+A **from-scratch implementation** of the **Random Walk Metropolis (RWM)** algorithm—a **Markov Chain Monte Carlo (MCMC)** method—for sampling from a **Laplace distribution** and assessing convergence using the **Gelman–Rubin (\(R_b\)) diagnostic**.
+
+> **Language:** Python  
+> **Libraries:** NumPy, Matplotlib, Seaborn
+
+---
 
 ## Overview
 
-This project implements the Random Walk Metropolis-Hastings (MCMC) algorithm from scratch to generate samples from a Laplace distribution.
+Many probability distributions cannot be sampled from directly using standard techniques. Markov Chain Monte Carlo (MCMC) methods overcome this by constructing a Markov chain whose long-run behaviour converges to the desired target distribution.
 
-The project also investigates the convergence properties of the sampler using the Gelman-Rubin (Rb) diagnostic and analyses how the proposal step size influences mixing and convergence.
+This project implements the **Random Walk Metropolis algorithm** from scratch to generate samples from the Laplace distribution
 
----
+\[
+f(x)=\frac{1}{2}e^{-|x|}
+\]
 
-## Repository Structure
-
-01_metropolis_hastings_sampling.ipynb
-Implementation of the Metropolis-Hastings algorithm, sampling from a Laplace distribution, histogram, KDE, and Monte Carlo estimates.
-
-02_convergence_diagnostics.ipynb
-Multiple-chain implementation and convergence analysis using the Gelman-Rubin statistic.
+and evaluates the quality of the sampler using Monte Carlo estimation and convergence diagnostics.
 
 ---
 
-## Topics Covered
+## Project Objectives
 
-- Markov Chain Monte Carlo (MCMC)
-- Metropolis-Hastings Algorithm
-- Laplace Distribution
-- Monte Carlo Estimation
-- Kernel Density Estimation
-- Gelman-Rubin Convergence Diagnostic
-- Statistical Computing
+This project:
 
----
-
-## Technologies
-
-- Python
-- NumPy
-- SciPy
-- Matplotlib
+- Implements the **Random Walk Metropolis (RWM)** algorithm from scratch.
+- Generates samples from a **Laplace distribution** without direct sampling.
+- Validates the sampler using histograms, kernel density estimation (KDE), and Monte Carlo estimates.
+- Assesses convergence using multiple independent Markov chains and the **Gelman–Rubin (\(R_b\)) diagnostic**.
+- Investigates how the proposal step size affects convergence and mixing behaviour.
