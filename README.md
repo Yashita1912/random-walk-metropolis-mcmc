@@ -89,7 +89,7 @@ The Monte Carlo estimates were:
 | Mean | -0.028 | 0 |
 | Standard Deviation | 1.407 | √2 ≈ 1.414 |
 
-*(Insert histogram/KDE figure here)*
+
 
 ---
 
@@ -111,7 +111,7 @@ The Gelman–Rubin diagnostic showed:
 
 - By **s ≈ 1**, \(R_b \approx 1.00\), indicating successful convergence.
 
-*(Insert Rb vs Step Size plot here)*
+
 
 ---
 
